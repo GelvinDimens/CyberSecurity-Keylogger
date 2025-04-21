@@ -1,27 +1,48 @@
-# keylogger
+# 🛠️ Keylogger (Educational Purpose Only)
 
-Keyloggers are programs that capture your key strokes.
-They can be used to keep logs of everything you press on the keyboard but on the 
-flip side it can be used for malicious purposes as well.
+This is a **basic keylogger** built with Python. Keyloggers are programs designed to capture keyboard input. While they can be useful for personal productivity tracking or testing keyboard input in applications, they are often used for unethical purposes. **This project is intended strictly for educational and ethical research purposes.**
 
-The keylogger that I've made is a basic keylogger with not much functionality as the ones available in market today.
-It captures your keystrokes and saves them in a file "keylogger.txt".
+## 🔍 About
 
-It then sends the contents of the file(i.e. the keystrokes) to your email id.
+This keylogger records every keystroke and logs them into a file named `keylogger.txt`. Additionally, the contents of this file (i.e., the captured keystrokes) are sent to a predefined email address using Python's built-in `smtplib`.
 
-With some extra lines of code, it can also send the keystrokes at regular intervals.
-But that is a project for another time.
+> ⚠️ **Disclaimer**: Unauthorized use of keyloggers is illegal and unethical. Only run this code on machines you own or have explicit permission to test on.
 
-I have not made it executable so one has to explicitely call it.
+## 📦 Features
 
-SYNTAX : python keylogger.py
+- Logs all keyboard input into `keylogger.txt`
+- Sends the captured keystrokes to a specified email address
+- Exits cleanly when the `Esc` key is pressed
+- Easily extendable to send logs at regular intervals (not implemented in this version)
 
-[NOTE: You need to press esc key to exit out the keylogger.]
+## 🚀 Usage
 
-You need to have pynput , smtplib and ssl installed.
+1. Make sure you have Python installed.
+2. Install the required Python module:
 
-While python comes with the library smtplib and ssl preinstalled.
-You can install pynput with :
-pip install pynput
+   ```bash
+   pip install pynput
+   ```
 
+3. Run the keylogger:
+
+   ```bash
+   python keylogger.py
+   ```
+
+> 🛑 Press `Esc` to stop the keylogger.
+
+## 🧰 Dependencies
+
+- [`pynput`](https://pypi.org/project/pynput/) – For listening to keyboard events  
+- `smtplib` and `ssl` – For sending emails (comes pre-installed with Python)
+
+## 📌 Notes
+
+- The script is **not compiled into an executable**, so it needs to be explicitly run using the Python interpreter.
+- You may configure the email and interval logic to extend the functionality, such as sending periodic reports.
+
+## 🧪 For Educational Use Only
+
+This tool is intended to **learn how keystroke capturing works**, understand the risks, and promote awareness around digital security. Use responsibly.
 
